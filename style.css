@@ -5,6 +5,13 @@
 	padding: 0px;
 	margin: 0px;
 }
+html{
+	scroll-snap-type: y mandatory;
+}
+section{
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+}
 .sec1{
 	position: relative;
 	height: var(--dynamic-height);
