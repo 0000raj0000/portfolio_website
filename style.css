@@ -27,6 +27,7 @@
 	position: relative;
 	grid-area: 1/2/2/5;
 	border-radius: 50%;
+	z-index: 2;
 	background-image: url('images/image1.png');
 	background-position: center;
 	background-size: 120% 120%;
@@ -34,12 +35,23 @@
 	backdrop-filter: blur(20px);
 	border-bottom: 2px dashed black;
 }
+.sec1>div.content>div.contentb{
+	position: absolute;
+	bottom: 0px;
+	height: 90%;
+	width: 10px;
+	background: black;
+	z-index: 1;
+}
 @media screen and (min-width:0px) and (max-width: 320px){
 	.sec1{
 		grid-template-columns: 0.1fr 4fr 0.1fr;
 	}
 	.sec1>div.content>div.contenta{
 		width: 80%;
+	}
+	.sec1>div.content>div.contentb{
+		width: 5px;
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 480px){
@@ -49,6 +61,9 @@
 	.sec1>div.content>div.contenta{
 		width: 75%;
 	}
+	.sec1>div.content>div.contentb{
+		width: 7.5px;
+	}
 }
 @media screen and (min-width: 480px) and (max-width: 768px){
 	.sec1{
@@ -56,6 +71,9 @@
 	}
 	.sec1>div.content>div.contenta{
 		width: 70%;
+	}
+	.sec1>div.content>div.contentb{
+		width: 10px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1280px){
