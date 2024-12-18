@@ -10,7 +10,7 @@ section{
 }
 .sec1{
 	position: relative;
-	height: 100vh;
+	height: 100svh;
 	width: 100%;
 	background: linear-gradient(to bottom, rgba(245, 222, 179, 1.0), rgba(231, 207, 160, 1.0));
 	display: grid;
